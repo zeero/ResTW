@@ -46,9 +46,7 @@ DAMAGE.
 <!--}}}-->
 
 <!--PRE-HEAD-END-->
-<title>
-
-</title>
+<title> My TiddlyWiki - a reusable non-linear personal web notebook </title>
 <style id="styleArea" type="text/css">
 #saveTest {display:none;}
 #messageArea {display:none;}
@@ -522,7 +520,37 @@ noscript {display:none;} /* Fixes a feature in Firefox 1.5.0.2 where print previ
 
 </div>
 <!--POST-SHADOWAREA-->
-<div id="storeArea"></div>
+<div id="storeArea">
+<div title="ResTWPlugin" creator="YourName" modifier="Zeero" created="201307270233" modified="201307270247" tags="systemConfig" changecount="8">
+<pre>/***
+|Name|ResTWPlugin|
+|Created by|zeero|
+|Location|https://github.com/zeero/ResTW|
+|Version|0.0.1|
+|Requires|TW2.x|
+|Browser|iOS Safari5+, Android GoogleChrome|
+
+!Description
+Responsive web design for Tiddlywiki.
+
+!Usage
+Import this tiddler.
+
+!Code
+***/
+//{{{
+// set viewport in head tag.
+var viewport = document.createElement('meta');
+with(viewport) {
+  name = 'viewport';
+  content = 'width=device-width, initial-scale=1.0, user-scalable=no';
+}
+var heads = document.getElementsByTagName('head');
+heads.item(0).appendChild(viewport);
+//}}}
+</pre>
+</div>
+</div>
 <!--POST-STOREAREA-->
 <!--POST-BODY-START-->
 
